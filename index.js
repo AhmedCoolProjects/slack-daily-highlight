@@ -42,7 +42,7 @@ app.get("/api/send-reminder", async (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, async () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port http://localhost:${port}`);
   try {
     await slackApp.start(port + 1);
     console.log("⚡️ Bolt app is running!");
