@@ -21,7 +21,7 @@ const HIGHLIGHT_TEMPLATE = `
 const CHANNEL_ID = "C079WLW1WHY";
 
 app.get("/", (req, res) => {
-  res.send("Hello from Ahmed BARGADY!");
+  res.send(`Hello from Ahmed BARGADY! ${process.env.SLACK_BOT_TOKEN}`);
   console.log("TOKEN", process.env.SLACK_BOT_TOKEN);
 });
 
