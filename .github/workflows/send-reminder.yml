@@ -1,0 +1,17 @@
+name: Schedule Reminder
+
+on:
+  schedule:
+    # Runs at 9 AM every weekday
+    - cron: "0 13 * * 1-5"
+    # Runs at midnight every day
+    # - cron: '0 0 * * *'
+
+jobs:
+  send-reminder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Vercel API
+        run: |
+          curl -X GET "https://slack-daily-highlight.vercel.app/api/send-reminder"

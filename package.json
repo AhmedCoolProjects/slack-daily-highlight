@@ -1,0 +1,21 @@
+{
+  "name": "slack-daily-highlight",
+  "version": "1.0.0",
+  "description": "A Slack App that sends a daily highlight message to a channel",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": {
+    "name": "Ahmed BARGADY",
+    "email": "ahmed.bargady@outlook.com",
+    "url": "https://ahmed.jina.pro",
+    "github": "https://github.com/AhmedCoolProjects"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@slack/bolt": "^3.19.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3"
+  }
+}
