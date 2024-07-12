@@ -22,6 +22,7 @@ const CHANNEL_ID = "C079WLW1WHY";
 
 app.get("/", (req, res) => {
   res.send("Hello from Ahmed BARGADY!");
+  console.log("TOKEN", process.env.SLACK_BOT_TOKEN);
 });
 
 app.get("/api/send-reminder", async (req, res) => {
